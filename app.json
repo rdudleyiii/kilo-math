@@ -1,0 +1,7 @@
+{
+  "name": "kilo-math",
+  "description": "Kilo Math for Weightlifters",
+  "repository": "https://github.com/rdudleyiii/kilo-math",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
+}

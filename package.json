@@ -1,0 +1,25 @@
+{
+  "name": "kilo-math",
+  "version": "0.1.2",
+  "description": "Kilo Math for Weightlifters",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rdudleyiii/kilo-math"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
