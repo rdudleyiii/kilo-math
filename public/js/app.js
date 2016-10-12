@@ -1,26 +1,12 @@
-$(function() {
-	lifting();
-});
+document.addEventListener( "DOMContentLoaded", lifting );
 
-var lifting = function() {
-    var maxKG = 300,
-        kgLoop = 15;
-    var CONVERTER = 2.204;
+function lifting() {
+    var maxKG = 300, kgLoop = 15, CONVERTER = 2.204, tableHTML = "";
 
     while (kgLoop <= maxKG) {
-        var pounds = (kgLoop * CONVERTER).toFixed(2);
-
-        var template = [
-        	'<tr>'
-        		,'<td>' + kgLoop + '</td>'
-        		,'<td>' + pounds + '</td>'
-        	,'</tr>'
-        ].join('')
-
-        // console.log('kilos: ' + kgLoop + ', pounds: ' + pounds);
-
-        $( '#kilo-math-body').append( template );
-
+        tableHTML += '<tr><td>' + kgLoop + '</td><td>' + (kgLoop * CONVERTER).toFixed(2) + '</td></tr>';
         kgLoop++;
     }
+
+    document.getElementById( 'kilo-math-body').innerHTML = tableHTML;
 };
